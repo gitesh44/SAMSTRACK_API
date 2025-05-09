@@ -32,7 +32,6 @@ public class SubjectController {
 
 	@PostMapping("/add-subject")
 	@CrossOrigin(methods = RequestMethod.POST)
-
 	public Subject createSubject(@RequestBody Subject subject) {
 		return subjectService.createSubject(subject);
 	}
@@ -44,7 +43,7 @@ public class SubjectController {
 	
 	@PutMapping("/update-subject")
 	@CrossOrigin(methods = RequestMethod.PUT)
-	public Subject updateSubject(@RequestBody Subject subjectDetails) {
+	public Subject updateSubject( @RequestBody Subject subjectDetails) {
 
 		return subjectService.updateSubject(subjectDetails);
 	}

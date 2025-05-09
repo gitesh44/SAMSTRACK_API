@@ -8,11 +8,21 @@ import javax.persistence.Id;
 @Entity
 public class Subject {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+ 
     private Long id;
     private String name;
+    
+    
+    
+ 
+   
+	public Subject(Long id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
 
-    public Subject() {
+	public Subject() {
 		// TODO Auto-generated constructor stub
 	}
 
